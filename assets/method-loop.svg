@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 710" width="1000" height="710" role="img" aria-label="Stage 0 constitution, then per feature: specify, you answer the interview, plan, you edit the plan, tasks, then implement, an agent-runnable gate that loops back on failure, review and ship, you review the evidence, and the spec is archived before the next feature starts back at stage 1.">
+  <style>
+    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .t  { font-size: 14px; font-weight: 600; fill: #0f172a; }
+    .s  { font-size: 12px; fill: #64748b; }
+    .t.you  { fill: #1e3a8a; }  .s.you  { fill: #1d4ed8; }
+    .t.auto { fill: #4c1d95; }
+    .t.ship { fill: #14532d; }  .s.ship { fill: #15803d; }
+    .pt { font-size: 11px; font-weight: 700; letter-spacing: .09em; fill: #64748b; }
+    .el { font-size: 11px; font-weight: 600; fill: #64748b; }
+    .el.g { fill: #15803d; }  .el.a { fill: #b45309; }
+
+    .bg    { fill: #ffffff; stroke: #e5e9f0; }
+    .panel { fill: #f7f9fc; stroke: #e4e9f0; }
+    .base  { fill: #ffffff; stroke: #cbd5e1; }
+    .found { fill: #eef2f7; stroke: #94a3b8; }
+    .you   { fill: #dbeafe; stroke: #2563eb; }
+    .auto  { fill: #ede9fe; stroke: #7c3aed; }
+    .ship  { fill: #dcfce7; stroke: #16a34a; }
+
+    .e  { stroke: #94a3b8; }  .mk  { fill: #94a3b8; }
+    .eg { stroke: #16a34a; }  .mkg { fill: #16a34a; }
+    .ea { stroke: #f59e0b; }  .mka { fill: #f59e0b; }
+
+    @media (prefers-color-scheme: dark) {
+      .t  { fill: #e6edf3; }
+      .s  { fill: #9198a1; }
+      .t.you  { fill: #cae0ff; }  .s.you  { fill: #79c0ff; }
+      .t.auto { fill: #e0d3ff; }
+      .t.ship { fill: #b7f0c2; }  .s.ship { fill: #56d364; }
+      .pt { fill: #8b949e; }
+      .el { fill: #9198a1; }
+      .el.g { fill: #56d364; }  .el.a { fill: #e3b341; }
+
+      .bg    { fill: #0d1117; stroke: #21262d; }
+      .panel { fill: #161b22; stroke: #262c36; }
+      .base  { fill: #1c2128; stroke: #3d444d; }
+      .found { fill: #21262d; stroke: #565f6b; }
+      .you   { fill: #12253f; stroke: #388bfd; }
+      .auto  { fill: #221a3a; stroke: #a371f7; }
+      .ship  { fill: #0f2e1b; stroke: #3fb950; }
+
+      .e  { stroke: #6e7681; }  .mk  { fill: #6e7681; }
+      .eg { stroke: #3fb950; }  .mkg { fill: #3fb950; }
+      .ea { stroke: #d29922; }  .mka { fill: #d29922; }
+    }
+  </style>
+
+  <defs>
+    <marker id="ar"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkg"/></marker>
+    <marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mka"/></marker>
+  </defs>
+
+  <rect class="bg" x="0.5" y="0.5" width="999" height="709" rx="14"/>
+
+  <!-- legend -->
+  <rect class="base" x="44.5" y="27.5" width="13" height="13" rx="3"/>
+  <text class="s" x="63" y="38">the agent works</text>
+  <rect class="you" x="190.5" y="27.5" width="13" height="13" rx="3"/>
+  <text class="s" x="209" y="38">you decide</text>
+  <rect class="auto" x="306.5" y="27.5" width="13" height="13" rx="3"/>
+  <text class="s" x="325" y="38">automated gate</text>
+  <rect class="ship" x="450.5" y="27.5" width="13" height="13" rx="3"/>
+  <text class="s" x="469" y="38">shipped</text>
+  <path class="ea" d="M554 34 H578" fill="none" stroke-width="2" marker-end="url(#ara)"/>
+  <text class="s" x="586" y="38">orange arrows go back and fix</text>
+
+  <!-- ============ left column ============ -->
+  <rect class="panel" x="44.5" y="64.5" width="391" height="580" rx="12"/>
+  <text class="pt" x="72" y="92">INTENT AND DESIGN</text>
+
+  <rect class="found" x="72.5" y="112.5" width="335" height="57" rx="8"/>
+  <text class="t" x="240" y="136" text-anchor="middle">Stage 0 · Constitution</text>
+  <text class="s" x="240" y="154" text-anchor="middle">durable rules, once per project</text>
+
+  <rect class="base" x="72.5" y="202.5" width="335" height="57" rx="8"/>
+  <text class="t" x="240" y="226" text-anchor="middle">Stage 1 · Specify</text>
+  <text class="s" x="240" y="244" text-anchor="middle">what and why, EARS criteria</text>
+
+  <rect class="you" x="72.5" y="292.5" width="335" height="57" rx="8"/>
+  <text class="t you" x="240" y="326" text-anchor="middle">You answer the interview questions</text>
+
+  <rect class="base" x="72.5" y="382.5" width="335" height="57" rx="8"/>
+  <text class="t" x="240" y="406" text-anchor="middle">Stage 2 · Plan</text>
+  <text class="s" x="240" y="424" text-anchor="middle">how, in a fresh context</text>
+
+  <rect class="you" x="72.5" y="472.5" width="335" height="57" rx="8"/>
+  <text class="t you" x="240" y="506" text-anchor="middle">You edit the plan before any code</text>
+
+  <rect class="base" x="72.5" y="562.5" width="335" height="57" rx="8"/>
+  <text class="t" x="240" y="586" text-anchor="middle">Stage 3 · Tasks</text>
+  <text class="s" x="240" y="604" text-anchor="middle">small, ordered, each names its test</text>
+
+  <path class="e" d="M240 170 V202" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="e" d="M240 260 V292" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="e" d="M240 350 V382" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="e" d="M240 440 V472" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="e" d="M240 530 V562" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text class="el" x="249" y="550">edits, then approves</text>
+
+  <!-- ============ right column ============ -->
+  <rect class="panel" x="556.5" y="64.5" width="399" height="580" rx="12"/>
+  <text class="pt" x="604" y="92">IMPLEMENT AND SHIP</text>
+
+  <rect class="base" x="604.5" y="158.5" width="311" height="57" rx="8"/>
+  <text class="t" x="760" y="182" text-anchor="middle">Stage 4 · Implement</text>
+  <text class="s" x="760" y="200" text-anchor="middle">one task, red then green</text>
+
+  <rect class="auto" x="604.5" y="248.5" width="311" height="57" rx="8"/>
+  <text class="t auto" x="760" y="282" text-anchor="middle">Agent-runnable check passes?</text>
+
+  <rect class="base" x="604.5" y="338.5" width="311" height="57" rx="8"/>
+  <text class="t" x="760" y="362" text-anchor="middle">Stage 5 · Review and ship</text>
+  <text class="s" x="760" y="380" text-anchor="middle">fresh-context reviewer, log, commit</text>
+
+  <rect class="you" x="604.5" y="428.5" width="311" height="57" rx="8"/>
+  <text class="t you" x="760" y="462" text-anchor="middle">You review the evidence</text>
+
+  <rect class="ship" x="604.5" y="518.5" width="311" height="57" rx="8"/>
+  <text class="t ship" x="760" y="542" text-anchor="middle">Spec archived as done</text>
+  <text class="s ship" x="760" y="560" text-anchor="middle">live acceptance recorded</text>
+
+  <path class="e"  d="M760 216 V248" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="eg" d="M760 306 V338" fill="none" stroke-width="2" marker-end="url(#arg)"/>
+  <text class="el g" x="769" y="326">yes</text>
+  <path class="e"  d="M760 396 V428" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="eg" d="M760 486 V518" fill="none" stroke-width="2" marker-end="url(#arg)"/>
+  <text class="el g" x="769" y="506">accepted</text>
+
+  <!-- gate fails -->
+  <path class="ea" d="M916 277 H930 Q938 277 938 269 V195 Q938 187 930 187 H916" fill="none" stroke-width="2" stroke-linecap="round" marker-end="url(#ara)"/>
+  <text class="el a" x="948" y="232" text-anchor="middle" transform="rotate(-90 948 232)">no</text>
+
+  <!-- human finds gaps -->
+  <path class="ea" d="M604 457 H590 Q582 457 582 449 V205 Q582 197 590 197 H604" fill="none" stroke-width="2" stroke-linecap="round" marker-end="url(#ara)"/>
+  <text class="el a" x="570" y="327" text-anchor="middle" transform="rotate(-90 570 327)">gaps found</text>
+
+  <!-- tasks hand off to implement -->
+  <path class="e" d="M408 591 H488 Q496 591 496 583 V140 Q496 132 504 132 H752 Q760 132 760 140 V158" fill="none" stroke-width="2" stroke-linecap="round" marker-end="url(#ar)"/>
+
+  <!-- next feature -->
+  <path class="e" d="M760 576 V664 Q760 672 752 672 H30 Q22 672 22 664 V239 Q22 231 30 231 H72" fill="none" stroke-width="2" stroke-linecap="round" marker-end="url(#ar)"/>
+  <text class="el" x="390" y="666" text-anchor="middle">next feature</text>
+</svg>

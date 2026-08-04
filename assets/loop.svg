@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 516" width="1000" height="516" role="img" aria-label="The spec-driven loop: decide what to build, decide how, then build and ship.">
+  <style>
+    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .t  { font-size: 14px; font-weight: 600; fill: #0f172a; }
+    .s  { font-size: 12px; fill: #64748b; }
+    .t.you  { fill: #1e3a8a; }  .s.you  { fill: #1d4ed8; }
+    .t.auto { fill: #4c1d95; }
+    .t.ship { fill: #14532d; }  .s.ship { fill: #15803d; }
+    .pt { font-size: 11px; font-weight: 700; letter-spacing: .09em; fill: #64748b; }
+    .el { font-size: 11px; font-weight: 600; fill: #64748b; }
+    .el.g { fill: #15803d; }  .el.a { fill: #b45309; }
+
+    .bg    { fill: #ffffff; stroke: #e5e9f0; }
+    .panel { fill: #f7f9fc; stroke: #e4e9f0; }
+    .base  { fill: #ffffff; stroke: #cbd5e1; }
+    .found { fill: #eef2f7; stroke: #94a3b8; }
+    .you   { fill: #dbeafe; stroke: #2563eb; }
+    .auto  { fill: #ede9fe; stroke: #7c3aed; }
+    .ship  { fill: #dcfce7; stroke: #16a34a; }
+
+    .e  { stroke: #94a3b8; }  .mk  { fill: #94a3b8; }
+    .eg { stroke: #16a34a; }  .mkg { fill: #16a34a; }
+    .ea { stroke: #f59e0b; }  .mka { fill: #f59e0b; }
+    .eb { stroke: #64748b; }  .mkb { fill: #64748b; }
+
+    @media (prefers-color-scheme: dark) {
+      .t  { fill: #e6edf3; }
+      .s  { fill: #9198a1; }
+      .t.you  { fill: #cae0ff; }  .s.you  { fill: #79c0ff; }
+      .t.auto { fill: #e0d3ff; }
+      .t.ship { fill: #b7f0c2; }  .s.ship { fill: #56d364; }
+      .pt { fill: #8b949e; }
+      .el { fill: #9198a1; }
+      .el.g { fill: #56d364; }  .el.a { fill: #e3b341; }
+
+      .bg    { fill: #0d1117; stroke: #21262d; }
+      .panel { fill: #161b22; stroke: #262c36; }
+      .base  { fill: #1c2128; stroke: #3d444d; }
+      .found { fill: #21262d; stroke: #565f6b; }
+      .you   { fill: #12253f; stroke: #388bfd; }
+      .auto  { fill: #221a3a; stroke: #a371f7; }
+      .ship  { fill: #0f2e1b; stroke: #3fb950; }
+
+      .e  { stroke: #6e7681; }  .mk  { fill: #6e7681; }
+      .eg { stroke: #3fb950; }  .mkg { fill: #3fb950; }
+      .ea { stroke: #d29922; }  .mka { fill: #d29922; }
+      .eb { stroke: #8b949e; }  .mkb { fill: #8b949e; }
+    }
+  </style>
+
+  <defs>
+    <marker id="ar"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkg"/></marker>
+    <marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mka"/></marker>
+    <marker id="arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkb"/></marker>
+  </defs>
+
+  <rect class="bg" x="0.5" y="0.5" width="999" height="515" rx="14"/>
+
+  <!-- ============ band A ============ -->
+  <rect class="panel" x="12.5" y="64.5" width="289" height="389" rx="12"/>
+  <text class="pt" x="33" y="92">DECIDE WHAT TO BUILD</text>
+
+  <rect class="found" x="33.5" y="145.5" width="247" height="55" rx="8"/>
+  <text class="t" x="157" y="169" text-anchor="middle">Constitution</text>
+  <text class="s" x="157" y="187" text-anchor="middle">project rules · written once</text>
+
+  <rect class="base" x="33.5" y="235.5" width="247" height="55" rx="8"/>
+  <text class="t" x="157" y="259" text-anchor="middle">1 · Specify</text>
+  <text class="s" x="157" y="277" text-anchor="middle">what and why</text>
+
+  <rect class="you" x="33.5" y="325.5" width="247" height="55" rx="8"/>
+  <text class="t you" x="157" y="358" text-anchor="middle">You approve the spec</text>
+
+  <path class="e" d="M157 201 V235" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="e" d="M157 291 V325" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ============ band B ============ -->
+  <rect class="panel" x="326.5" y="64.5" width="289" height="389" rx="12"/>
+  <text class="pt" x="347" y="92">DECIDE HOW</text>
+
+  <rect class="base" x="347.5" y="145.5" width="247" height="55" rx="8"/>
+  <text class="t" x="471" y="169" text-anchor="middle">2 · Plan</text>
+  <text class="s" x="471" y="187" text-anchor="middle">files, interfaces, tradeoffs</text>
+
+  <rect class="you" x="347.5" y="235.5" width="247" height="55" rx="8"/>
+  <text class="t you" x="471" y="268" text-anchor="middle">You edit the plan</text>
+
+  <rect class="base" x="347.5" y="325.5" width="247" height="55" rx="8"/>
+  <text class="t" x="471" y="349" text-anchor="middle">3 · Tasks</text>
+  <text class="s" x="471" y="367" text-anchor="middle">small steps, each with a test</text>
+
+  <path class="e" d="M471 201 V235" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="e" d="M471 291 V325" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ============ band C ============ -->
+  <rect class="panel" x="640.5" y="64.5" width="347" height="389" rx="12"/>
+  <text class="pt" x="692" y="92">BUILD AND SHIP</text>
+
+  <rect class="base" x="692.5" y="100.5" width="243" height="55" rx="8"/>
+  <text class="t" x="814" y="124" text-anchor="middle">4 · Build</text>
+  <text class="s" x="814" y="142" text-anchor="middle">write the test, then the code</text>
+
+  <rect class="auto" x="692.5" y="190.5" width="243" height="55" rx="8"/>
+  <text class="t auto" x="814" y="223" text-anchor="middle">Tests + lint pass?</text>
+
+  <rect class="base" x="692.5" y="280.5" width="243" height="55" rx="8"/>
+  <text class="t" x="814" y="304" text-anchor="middle">5 · Review</text>
+  <text class="s" x="814" y="322" text-anchor="middle">a second agent checks the diff</text>
+
+  <rect class="ship" x="692.5" y="370.5" width="243" height="55" rx="8"/>
+  <text class="t ship" x="814" y="394" text-anchor="middle">Ship</text>
+  <text class="s ship" x="814" y="412" text-anchor="middle">real output recorded · spec archived</text>
+
+  <path class="e"  d="M814 156 V190" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path class="eg" d="M814 246 V280" fill="none" stroke-width="2" marker-end="url(#arg)"/>
+  <text class="el g" x="823" y="267">green</text>
+  <path class="eg" d="M814 336 V370" fill="none" stroke-width="2" marker-end="url(#arg)"/>
+  <text class="el g" x="823" y="357">looks good</text>
+
+  <!-- gate fails, go back and fix -->
+  <path class="ea" d="M936 218 H952 Q962 218 962 208 V138 Q962 128 952 128 H936" fill="none" stroke-width="2" stroke-linecap="round" marker-end="url(#ara)"/>
+  <text class="el a" x="976" y="173" text-anchor="middle" transform="rotate(-90 976 173)">not yet</text>
+
+  <!-- review finds gaps, go back and fix -->
+  <path class="ea" d="M692 308 H676 Q666 308 666 298 V148 Q666 138 676 138 H692" fill="none" stroke-width="2" stroke-linecap="round" marker-end="url(#ara)"/>
+  <text class="el a" x="652" y="223" text-anchor="middle" transform="rotate(-90 652 223)">gaps found</text>
+
+  <!-- ============ band connectors ============ -->
+  <path class="eb" d="M302 263 H326" fill="none" stroke-width="2.5" marker-end="url(#arb)"/>
+  <path class="eb" d="M616 263 H640" fill="none" stroke-width="2.5" marker-end="url(#arb)"/>
+
+  <!-- ============ legend ============ -->
+  <rect class="base"  x="14.5" y="484.5" width="13" height="13" rx="3"/>
+  <text class="s" x="34" y="495">the agent works</text>
+
+  <rect class="you"   x="160.5" y="484.5" width="13" height="13" rx="3"/>
+  <text class="s" x="180" y="495">you decide</text>
+
+  <rect class="auto"  x="276.5" y="484.5" width="13" height="13" rx="3"/>
+  <text class="s" x="296" y="495">automated gate</text>
+
+  <rect class="ship"  x="420.5" y="484.5" width="13" height="13" rx="3"/>
+  <text class="s" x="440" y="495">shipped</text>
+
+  <path class="ea" d="M524 491 H548" fill="none" stroke-width="2" marker-end="url(#ara)"/>
+  <text class="s" x="556" y="495">orange arrows go back and fix</text>
+</svg>

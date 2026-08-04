@@ -1,0 +1,33 @@
+# <Project>: Agent Rules
+
+> Lean, always-loaded. Only rules that change agent behavior. For each line ask:
+> "would removing this cause a mistake?" If not, cut it or move it to a skill.
+
+## Before every session
+Read: this file, then `specs/<active-feature>/spec.md` and `tasks.md`, then `DECISIONS.md`.
+Confirm the active task matches what you're about to do; if not, stop and ask.
+
+## Identity & taboos
+- <What this is, who it's for, commercial status.>
+- Never mention AI tooling/automation in shipped code, comments, commits, or docs.
+- Never use the restricted term "<X>" anywhere that ships. This is a contractual naming
+  restriction, not a style preference. A test greps the source for it.
+
+## Hard rules
+- <Stack constraint, for example vanilla JS, no frameworks.>
+- Smallest safe change only. Do not refactor unrelated code.
+- Read before writing. Do not rewrite working logic.
+- Secrets: `<KEY>` only in serverless functions. Only `<PUBLIC_KEY>` may appear client-side.
+
+## Workflow
+- Per feature: spec, then plan, then tasks, then implement (TDD), then review, then ship.
+- Tests first. A step is not done until the suite is green AND you have shown the output.
+- After each step: update `DECISIONS.md` (rationale) and the spec status.
+
+## Commits
+- Conventional prefixes: feat / fix / refactor / chore / test / security.
+- No mention of AI/automation in messages.
+
+## Pointers (loaded on demand, not every turn)
+- Architecture & durable UI conventions: @ARCHITECTURE.md
+- Test commands & conventions: @TESTING.md

@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 710" width="1000" height="710" role="img" aria-label="The linter walks the three state folders, runs six checks on every spec file, two more on files marked done, and three across the specs tree as a whole. A failed check is collected without stopping the run. It then prints counts by state and exits 0 when clean or 1 with each violation listed.">
+  <style>
+    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .t  { font-size: 14px; font-weight: 600; fill: #0f172a; }
+    .s  { font-size: 12px; fill: #64748b; }
+    .r  { font-size: 12.5px; fill: #0f172a; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", Consolas, monospace; font-size: 13px; font-weight: 600; fill: #0f172a; }
+    .t.park { fill: #78350f; }  .s.park { fill: #a16207; }
+    .t.ship { fill: #14532d; }  .s.ship { fill: #15803d; }
+    .t.fail { fill: #7f1d1d; }  .s.fail { fill: #b91c1c; }
+    .pt { font-size: 11px; font-weight: 700; letter-spacing: .09em; fill: #64748b; }
+    .el { font-size: 11px; font-weight: 600; fill: #64748b; }
+    .el.g { fill: #15803d; }  .el.f { fill: #b91c1c; }
+    .num { font-size: 10.5px; font-weight: 700; fill: #ffffff; }
+
+    .bg    { fill: #ffffff; stroke: #e5e9f0; }
+    .panel { fill: #f7f9fc; stroke: #e4e9f0; }
+    .base  { fill: #ffffff; stroke: #cbd5e1; }
+    .park  { fill: #fef3c7; stroke: #d97706; }
+    .ship  { fill: #dcfce7; stroke: #16a34a; }
+    .fail  { fill: #fee2e2; stroke: #dc2626; }
+    .chip  { fill: #64748b; }
+
+    .e  { stroke: #94a3b8; }  .mk  { fill: #94a3b8; }
+    .eg { stroke: #16a34a; }  .mkg { fill: #16a34a; }
+    .ef { stroke: #dc2626; }  .mkf { fill: #dc2626; }
+    .ea { stroke: #f59e0b; }  .mka { fill: #f59e0b; }
+
+    @media (prefers-color-scheme: dark) {
+      .t { fill: #e6edf3; }
+      .s { fill: #9198a1; }
+      .r { fill: #e6edf3; }
+      .mono { fill: #e6edf3; }
+      .t.park { fill: #f5d59a; }  .s.park { fill: #e3b341; }
+      .t.ship { fill: #b7f0c2; }  .s.ship { fill: #56d364; }
+      .t.fail { fill: #ffc9c9; }  .s.fail { fill: #ff7b72; }
+      .pt { fill: #8b949e; }
+      .el { fill: #9198a1; }
+      .el.g { fill: #56d364; }  .el.f { fill: #ff7b72; }
+      .num { fill: #e6edf3; }
+
+      .bg    { fill: #0d1117; stroke: #21262d; }
+      .panel { fill: #161b22; stroke: #262c36; }
+      .base  { fill: #1c2128; stroke: #3d444d; }
+      .park  { fill: #2b2008; stroke: #d29922; }
+      .ship  { fill: #0f2e1b; stroke: #3fb950; }
+      .fail  { fill: #2d1214; stroke: #f85149; }
+      .chip  { fill: #484f58; }
+
+      .e  { stroke: #6e7681; }  .mk  { fill: #6e7681; }
+      .eg { stroke: #3fb950; }  .mkg { fill: #3fb950; }
+      .ef { stroke: #f85149; }  .mkf { fill: #f85149; }
+      .ea { stroke: #d29922; }  .mka { fill: #d29922; }
+    }
+  </style>
+
+  <defs>
+    <marker id="ar"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkg"/></marker>
+    <marker id="arf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkf"/></marker>
+    <marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mka"/></marker>
+  </defs>
+
+  <rect class="bg" x="0.5" y="0.5" width="999" height="709" rx="14"/>
+
+  <!-- command -->
+  <rect class="base" x="380.5" y="28.5" width="239" height="39" rx="8"/>
+  <text class="mono" x="500" y="53" text-anchor="middle">node specs/lint.mjs</text>
+  <path class="e" d="M500 67 V86" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- scan -->
+  <rect class="base" x="290.5" y="86.5" width="419" height="51" rx="8"/>
+  <text class="t" x="500" y="110" text-anchor="middle">Walk Completed/, Not Completed/, Parked/</text>
+  <text class="s" x="500" y="128" text-anchor="middle">for every .md file</text>
+  <path class="e" d="M500 137 V160" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ============ group 1 ============ -->
+  <rect class="panel" x="40.5" y="160.5" width="439" height="299" rx="12"/>
+  <text class="pt" x="60" y="187">EVERY SPEC FILE</text>
+
+  <rect class="base" x="56.5" y="200.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="80" cy="217" r="11"/>
+  <text class="num" x="80" y="221" text-anchor="middle">1</text>
+  <text class="r" x="102" y="222">Frontmatter block present</text>
+
+  <rect class="base" x="56.5" y="242.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="80" cy="259" r="11"/>
+  <text class="num" x="80" y="263" text-anchor="middle">2</text>
+  <text class="r" x="102" y="264">spec: key present</text>
+
+  <rect class="base" x="56.5" y="284.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="80" cy="301" r="11"/>
+  <text class="num" x="80" y="305" text-anchor="middle">3</text>
+  <text class="r" x="102" y="306">title: key present</text>
+
+  <rect class="base" x="56.5" y="326.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="80" cy="343" r="11"/>
+  <text class="num" x="80" y="347" text-anchor="middle">4</text>
+  <text class="r" x="102" y="348">status: key present</text>
+
+  <rect class="base" x="56.5" y="368.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="80" cy="385" r="11"/>
+  <text class="num" x="80" y="389" text-anchor="middle">5</text>
+  <text class="r" x="102" y="390">status: agrees with the folder</text>
+
+  <rect class="base" x="56.5" y="410.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="80" cy="427" r="11"/>
+  <text class="num" x="80" y="431" text-anchor="middle">6</text>
+  <text class="r" x="102" y="432">Spec number matches the filename</text>
+
+  <!-- ============ group 2 ============ -->
+  <rect class="panel" x="520.5" y="160.5" width="439" height="139" rx="12"/>
+  <text class="pt" x="540" y="187">ONLY IF status: done</text>
+
+  <rect class="base" x="536.5" y="200.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="560" cy="217" r="11"/>
+  <text class="num" x="560" y="221" text-anchor="middle">7</text>
+  <text class="r" x="582" y="222">Has ## Live acceptance, or is in the backfill ledger</text>
+
+  <rect class="base" x="536.5" y="242.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="560" cy="259" r="11"/>
+  <text class="num" x="560" y="263" text-anchor="middle">8</text>
+  <text class="r" x="582" y="264">Zero [NEEDS CLARIFICATION] tokens left</text>
+
+  <!-- ============ group 3 ============ -->
+  <rect class="panel" x="520.5" y="316.5" width="439" height="173" rx="12"/>
+  <text class="pt" x="540" y="343">THE specs/ TREE AS A WHOLE</text>
+
+  <rect class="base" x="536.5" y="356.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="560" cy="373" r="11"/>
+  <text class="num" x="560" y="377" text-anchor="middle">9</text>
+  <text class="r" x="582" y="378">No stray NN-name.md files in the specs root</text>
+
+  <rect class="base" x="536.5" y="398.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="560" cy="415" r="11"/>
+  <text class="num" x="560" y="419" text-anchor="middle">10</text>
+  <text class="r" x="582" y="420">specs/README.md exists</text>
+
+  <rect class="base" x="536.5" y="440.5" width="407" height="33" rx="6"/>
+  <circle class="chip" cx="560" cy="457" r="11"/>
+  <text class="num" x="560" y="461" text-anchor="middle">11</text>
+  <text class="r" x="582" y="462">Every spec appears in the README index</text>
+
+  <!-- collector -->
+  <path class="e" d="M260 459 V510" fill="none" stroke-width="1.5"/>
+  <path class="e" d="M740 489 V510" fill="none" stroke-width="1.5"/>
+  <path class="e" d="M260 510 H740" fill="none" stroke-width="1.5"/>
+  <path class="e" d="M500 510 V530" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- failures do not halt -->
+  <rect class="park" x="40.5" y="530.5" width="269" height="51" rx="8"/>
+  <text class="t park" x="175" y="554" text-anchor="middle">Failures don't stop the run</text>
+  <text class="s park" x="175" y="572" text-anchor="middle">errors collect, scanning continues</text>
+  <path class="ea" d="M310 556 H350" fill="none" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ara)"/>
+
+  <!-- summary -->
+  <rect class="base" x="350.5" y="530.5" width="299" height="51" rx="8"/>
+  <text class="t" x="500" y="562" text-anchor="middle">Print counts by state</text>
+
+  <path class="eg" d="M500 581 V592 Q500 600 492 600 H368 Q360 600 360 608 V624" fill="none" stroke-width="2" stroke-linecap="round" marker-end="url(#arg)"/>
+  <text class="el g" x="350" y="620" text-anchor="end">no violations</text>
+  <path class="ef" d="M500 581 V592 Q500 600 508 600 H632 Q640 600 640 608 V624" fill="none" stroke-width="2" stroke-linecap="round" marker-end="url(#arf)"/>
+  <text class="el f" x="650" y="620">any violation</text>
+
+  <rect class="ship" x="250.5" y="624.5" width="219" height="55" rx="8"/>
+  <text class="t ship" x="360" y="648" text-anchor="middle">lint clean</text>
+  <text class="s ship" x="360" y="666" text-anchor="middle">exit 0</text>
+
+  <rect class="fail" x="530.5" y="624.5" width="219" height="55" rx="8"/>
+  <text class="t fail" x="640" y="648" text-anchor="middle">Print each violation</text>
+  <text class="s fail" x="640" y="666" text-anchor="middle">exit 1</text>
+</svg>

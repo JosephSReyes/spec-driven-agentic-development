@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" width="960" height="330" role="img" aria-label="A spec is written and approved into Not Completed. It reaches Completed once live acceptance is recorded and no clarifications are open, and is then archived and never edited again. It can be deliberately deferred to Parked, unparked back to Not Completed, or abandoned.">
+  <style>
+    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .t { font-size: 14px; font-weight: 600; fill: #0f172a; }
+    .s { font-size: 12px; fill: #64748b; }
+    .t.park { fill: #78350f; }  .s.park { fill: #a16207; }
+    .t.ship { fill: #14532d; }  .s.ship { fill: #15803d; }
+    .el { font-size: 11px; font-weight: 600; fill: #64748b; }
+    .el.g { fill: #15803d; }  .el.a { fill: #b45309; }
+
+    .bg   { fill: #ffffff; stroke: #e5e9f0; }
+    .base { fill: #ffffff; stroke: #cbd5e1; }
+    .park { fill: #fef3c7; stroke: #d97706; }
+    .ship { fill: #dcfce7; stroke: #16a34a; }
+    .term { fill: #475569; }
+    .termr { fill: none; stroke: #475569; }
+
+    .e  { stroke: #94a3b8; }  .mk  { fill: #94a3b8; }
+    .eg { stroke: #16a34a; }  .mkg { fill: #16a34a; }
+    .ea { stroke: #f59e0b; }  .mka { fill: #f59e0b; }
+
+    @media (prefers-color-scheme: dark) {
+      .t { fill: #e6edf3; }
+      .s { fill: #9198a1; }
+      .t.park { fill: #f5d59a; }  .s.park { fill: #e3b341; }
+      .t.ship { fill: #b7f0c2; }  .s.ship { fill: #56d364; }
+      .el { fill: #9198a1; }
+      .el.g { fill: #56d364; }  .el.a { fill: #e3b341; }
+
+      .bg   { fill: #0d1117; stroke: #21262d; }
+      .base { fill: #1c2128; stroke: #3d444d; }
+      .park { fill: #2b2008; stroke: #d29922; }
+      .ship { fill: #0f2e1b; stroke: #3fb950; }
+      .term { fill: #8b949e; }
+      .termr { stroke: #8b949e; }
+
+      .e  { stroke: #6e7681; }  .mk  { fill: #6e7681; }
+      .eg { stroke: #3fb950; }  .mkg { fill: #3fb950; }
+      .ea { stroke: #d29922; }  .mka { fill: #d29922; }
+    }
+  </style>
+
+  <defs>
+    <marker id="ar"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkg"/></marker>
+    <marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mka"/></marker>
+  </defs>
+
+  <rect class="bg" x="0.5" y="0.5" width="959" height="329" rx="14"/>
+
+  <!-- start -->
+  <circle class="term" cx="44" cy="98" r="8"/>
+  <path class="e" d="M52 98 H200" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text class="el" x="126" y="86" text-anchor="middle">spec written and approved</text>
+
+  <rect class="base" x="200.5" y="64.5" width="219" height="67" rx="8"/>
+  <text class="t" x="310" y="95" text-anchor="middle">Not Completed/</text>
+  <text class="s" x="310" y="115" text-anchor="middle">status: not-completed</text>
+
+  <rect class="ship" x="660.5" y="64.5" width="219" height="67" rx="8"/>
+  <text class="t ship" x="770" y="95" text-anchor="middle">Completed/</text>
+  <text class="s ship" x="770" y="115" text-anchor="middle">status: done</text>
+
+  <rect class="park" x="200.5" y="228.5" width="219" height="67" rx="8"/>
+  <text class="t park" x="310" y="259" text-anchor="middle">Parked/</text>
+  <text class="s park" x="310" y="279" text-anchor="middle">status: parked</text>
+
+  <!-- not completed -> completed -->
+  <path class="eg" d="M420 108 H660" fill="none" stroke-width="2" marker-end="url(#arg)"/>
+  <text class="el g" x="540" y="80" text-anchor="middle">live acceptance recorded</text>
+  <text class="el g" x="540" y="94" text-anchor="middle">and no open clarifications</text>
+
+  <!-- not completed <-> parked -->
+  <path class="ea" d="M245 132 V228" fill="none" stroke-width="2" marker-end="url(#ara)"/>
+  <text class="el a" x="237" y="185" text-anchor="end">deliberately deferred</text>
+  <path class="e" d="M375 228 V132" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text class="el" x="383" y="185">unparked, work resumes</text>
+
+  <!-- terminals -->
+  <path class="e" d="M770 132 V190" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <circle class="termr" cx="770" cy="211" r="9" stroke-width="1.5"/>
+  <circle class="term" cx="770" cy="211" r="4.5"/>
+  <text class="el" x="788" y="176">archived, never edited again</text>
+
+  <path class="e" d="M420 262 H489" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <circle class="termr" cx="510" cy="262" r="9" stroke-width="1.5"/>
+  <circle class="term" cx="510" cy="262" r="4.5"/>
+  <text class="el" x="455" y="252" text-anchor="middle">abandoned</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 180" width="1010" height="180" role="img" aria-label="A spec moves between three folders: Not Completed, Parked, and Completed.">
+  <style>
+    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .t { font-size: 14px; font-weight: 600; fill: #0f172a; }
+    .s { font-size: 12px; fill: #64748b; }
+    .t.park { fill: #78350f; }  .s.park { fill: #a16207; }
+    .t.ship { fill: #14532d; }  .s.ship { fill: #15803d; }
+    .el { font-size: 11px; font-weight: 600; fill: #64748b; }
+    .el.g { fill: #15803d; }  .el.a { fill: #b45309; }
+
+    .bg   { fill: #ffffff; stroke: #e5e9f0; }
+    .base { fill: #ffffff; stroke: #cbd5e1; }
+    .park { fill: #fef3c7; stroke: #d97706; }
+    .ship { fill: #dcfce7; stroke: #16a34a; }
+
+    .e  { stroke: #94a3b8; }  .mk  { fill: #94a3b8; }
+    .eg { stroke: #16a34a; }  .mkg { fill: #16a34a; }
+    .ea { stroke: #f59e0b; }  .mka { fill: #f59e0b; }
+
+    @media (prefers-color-scheme: dark) {
+      .t { fill: #e6edf3; }
+      .s { fill: #9198a1; }
+      .t.park { fill: #f5d59a; }  .s.park { fill: #e3b341; }
+      .t.ship { fill: #b7f0c2; }  .s.ship { fill: #56d364; }
+      .el { fill: #9198a1; }
+      .el.g { fill: #56d364; }  .el.a { fill: #e3b341; }
+
+      .bg   { fill: #0d1117; stroke: #21262d; }
+      .base { fill: #1c2128; stroke: #3d444d; }
+      .park { fill: #2b2008; stroke: #d29922; }
+      .ship { fill: #0f2e1b; stroke: #3fb950; }
+
+      .e  { stroke: #6e7681; }  .mk  { fill: #6e7681; }
+      .eg { stroke: #3fb950; }  .mkg { fill: #3fb950; }
+      .ea { stroke: #d29922; }  .mka { fill: #d29922; }
+    }
+  </style>
+
+  <defs>
+    <marker id="ar"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkg"/></marker>
+    <marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mka"/></marker>
+  </defs>
+
+  <rect class="bg" x="0.5" y="0.5" width="1009" height="179" rx="14"/>
+
+  <rect class="park" x="24.5" y="56.5" width="209" height="67" rx="8"/>
+  <text class="t park" x="129" y="87" text-anchor="middle">Parked/</text>
+  <text class="s park" x="129" y="107" text-anchor="middle">deferred on purpose</text>
+
+  <rect class="base" x="400.5" y="56.5" width="209" height="67" rx="8"/>
+  <text class="t" x="505" y="87" text-anchor="middle">Not Completed/</text>
+  <text class="s" x="505" y="107" text-anchor="middle">written, not shipped</text>
+
+  <rect class="ship" x="776.5" y="56.5" width="209" height="67" rx="8"/>
+  <text class="t ship" x="881" y="87" text-anchor="middle">Completed/</text>
+  <text class="s ship" x="881" y="107" text-anchor="middle">real output recorded</text>
+
+  <path class="ea" d="M400 74 H234" fill="none" stroke-width="2" marker-end="url(#ara)"/>
+  <text class="el a" x="317" y="64" text-anchor="middle">deferred, reason written down</text>
+
+  <path class="e" d="M234 106 H400" fill="none" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text class="el" x="317" y="122" text-anchor="middle">picked back up</text>
+
+  <path class="eg" d="M610 90 H776" fill="none" stroke-width="2" marker-end="url(#arg)"/>
+  <text class="el g" x="693" y="80" text-anchor="middle">live acceptance recorded</text>
+</svg>
